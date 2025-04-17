@@ -1,521 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daisy Kim</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="picture">
-          <img src="./assets/images/daisy.jpg" alt="Daisy Kim" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Daisy Kim">Daisy Kim</h1>
-
-          <p class="title">Linguist</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:kimdaisyyr@gmail.com" class="contact-link">kimdaisyyr@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Work Email</p>
-
-              <a href="mailto:kimdaisy@meta.com" class="contact-link">kimdaisy@meta.com</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/kimdaisyyr" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/kimdaisyyr/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Hobbies</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About Me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            My name is Daisy and I am a linguist working on Meta's Fundamental AI Research Team (FAIR).
-          </p>
-
-          <p>
-            I have a background in linguistics and computer science; I enjoy working on projects with a focus on semantics, sociolinguistics, and human-computer interaction (HCI).
-          </p>
-
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/meta.png
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Meta</h4>
-
-                <p class="service-item-text">
-                  I am currently working on Meta's Massively Multilingual Speech (MMS) project that aims to support under-resourced languages using AI and self-supervised learning.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/lang_icon.png
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Linguistic Consulting</h4>
-
-                <p class="service-item-text">
-                  I am a freelance linguistic consultant with Productive Playhouse, an international production and language company based in Los Angeles.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of North Carolina at Chapel Hill</h4>
-
-              <span>MA in Linguistics</span>
-
-              <p class="timeline-text">
-                2022 — 2024
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Emory University</h4>
-
-              <span>BA in Linguistics, Minor in Computer Science</span>
-
-              <p class="timeline-text">
-                2018 — 2022<br>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline-posts">
-
-          <div class="title-wrapper">
-            <h3 class="h3">Projects</h3>
-            <br>
-          </div>
-
-          <ul class="timeline-posts-list">
-
-            <li class="timeline-post-item">
-              <a href="https://www.proquest.com/docview/3148068781?sourcetype=Dissertations%20&%20Theses">
-
-                <figure class="timeline-banner-box">
-                  <img src="./assets/images/ThesisPic.png" alt="Thesis Pic" loading="lazy">
-                </figure>
-
-                <div class="timeline-content">
-
-                  <h3 class="h3 timeline-item-title">Master's Thesis</h3>
-
-                  <p class="timeline-text">
-                    A Linguistic Analysis of Change or Stability of Morphosyntactic and Phonological Features in African American English.
-                  </p>
-
-                </div>
-            </a>
-
-          </li>
-
-            <li class="timeline-post-item">
-              <a href="https://docs.google.com/presentation/d/1qtEMg1IIEbPgfyHvxwFFTH0WnVaDeiBzgAuBoUQDCBQ/edit?usp=sharing">
-
-                <figure class="timeline-banner-box">
-                  <img src="./assets/images/maya.png" alt="Medium Profile" loading="lazy">
-                </figure>
-
-                <div class="timeline-content">
-
-                  <h3 class="h3 timeline-item-title">Janal, Uk'ul, yéetel Chaakal ich Yucatan</h3>
-
-                  <p class="timeline-text">
-                    In 2023, I traveled to the Yucatan Peninsula to study Yucatec Maya (Maayat'aan), an indigenous Mayan language spoken by over 800,000 speakers in Mexico, Guatemala, and Belize. This is my final presentation on what I learned about food, drinks, and cooking in the Yucatan.
-                  </p>
-
-                </div>
-            </a>
-
-          </li>
-
-            <li class="timeline-post-item">
-              <a href="https://sites.google.com/site/emorylalab">
-
-                <figure class="timeline-banner-box">
-                  <img src="./assets/images/LAL.png" alt="LAL Emory" loading="lazy">
-                </figure>
-
-                <div class="timeline-content">
-
-                  <h3 class="h3 timeline-item-title">Emory Language Acquisition Lab</h3>
-
-                  <p class="timeline-text">
-                    I worked as a research assistant in Emory University's Language Acquisition Lab, primarily focused on transcribing and encoding recordings from Korean heritiage, native, and second language learner speakers.
-                  </p>
-
-                </div>
-            </a>
-
-            </li>
-
-            <!-- <li class="timeline-post-item">
-              <a href="http://linguistics.emory.edu/home/documents/2021Spring_LinguisticsVirtualConference_InvitationWithAbstracts.pdf">
-
-                <figure class="timeline-banner-box">
-                  <img src="./assets/images/emoryurs.png" alt="Emory URS" loading="lazy">
-                </figure>
-
-                <div class="timeline-content">
-
-                  <h3 class="h3 timeline-item-title">Emory Undergraduate Research Symposium</h3>
-
-                  <p class="timeline-text">
-                    In 2021, Jane Farrell, Marvin Richards, and I presented in the Emory Undergraduate Research Symposium with a project on word association and the hierarchical network model.
-                  </p>
-
-                </div>
-            </a>
-
-            </li> -->
-
-            <li class="timeline-post-item">
-              <a href="https://youtu.be/7yfQZaKo2GY?si=YQa4YZUN2BUQeGpa">
-
-                <figure class="timeline-banner-box">
-                  <img src="./assets/images/linkpanel.png" alt="LiNK Panel" loading="lazy">
-                </figure>
-
-                <div class="timeline-content">
-
-                  <h3 class="h3 timeline-item-title">Liberty in North Korea</h3>
-
-                  <p class="timeline-text">
-                    During my time in Liberty in North Korea at Emory University, I had the opportunity to host a joint panel with Re’Generation Movement on ‘Media Representation of NK’ with the South Korea LiNK director, Sokeel Park, and North Korean refugee, Eunhee Park.
-                  </p>
-
-                </div>
-            </a>
-
-            </li>
-
-            <li class="timeline-post-item">
-              <a href="https://medium.com/@kimdaisyyr">
-
-                <figure class="timeline-banner-box">
-                  <img src="./assets/images/medium.png" alt="Medium Profile" loading="lazy">
-                </figure>
-
-                <div class="timeline-content">
-
-                  <h3 class="h3 timeline-item-title">HCI Project Articles</h3>
-
-                  <p class="timeline-text">
-                    In my Human-Computer Interaction class, I learned about user-focused computing and conducted projects aimed to provide solutions for problems related to equity, accessibility, and tension.
-                  </p>
-
-                </div>
-            </a>
-
-          </li>
-
-          </ul>
-
-        </section>
-
-        <header>
-          <br>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="about-text">
-          <object data="./assets/images/DaisyKimResume.pdf" type="application/pdf" width="100%" height="500px">
-            <p>Unable to display PDF file. <a href="./assets/images/DaisyKimResume.pdf">Download</a> </p>
-          </object>
-        </section>
-
-
-
-      </article>
-
-
-
-
-
-
-
-      <!--
-        - #HOBBIES
-      -->
-
-      <article class="hobbies" data-page="hobbies">
-
-        <header>
-          <h2 class="h2 article-title">Hobbies</h2>
-        </header>
-
-        <section class="hobbies-posts">
-
-          <ul class="hobbies-posts-list">
-
-            <li class="hobbies-post-item">
-              <a href="https://vsco.co/kimdaisyyr/gallery">
-
-                <figure class="hobbies-banner-box">
-                  <img src="./assets/images/vsco.png" alt="VSCO Profile" loading="lazy">
-                </figure>
-
-                <div class="hobbies-content">
-
-                  <h3 class="h3 hobbies-item-title">Eat with Me</h3>
-
-                  <p class="hobbies-text">
-                    I absolutely love to eat and try new foods! Follow my food journey here.
-                  </p>
-
-                </div>
-            </a>
-
-            </li>
-
-            <li class="hobbies-post-item">
-              <a href="https://www.goodreads.com/kimdaisy">
-
-                <figure class="hobbies-banner-box">
-                  <img src="./assets/images/bookclub.png" alt="Goodreads Profile" loading="lazy">
-                </figure>
-
-                <div class="hobbies-content">
-
-                  <h3 class="h3 hobbies-item-title">Read with Me</h3>
-
-                  <p class="hobbies-text">
-                    Add me as a friend on Goodreads! I love receiving new book recommendations.
-                  </p>
-
-                </div>
-            </a>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
+<!-- Only the updated parts shown below for brevity -->
+
+<figure class="picture">
+  <img src="./assets/images/IMG_2069.jpeg" alt="Anshika Arora" width="80">
+</figure>
+
+<div class="info-content">
+  <h1 class="name" title="Anshika Arora">Anshika Arora</h1>
+  <p class="title">Applied Linguist</p>
+</div>
+
+<!-- Contact -->
+<ul class="contacts-list">
+  <li class="contact-item">
+    <div class="icon-box">
+      <ion-icon name="mail-outline"></ion-icon>
     </div>
+    <div class="contact-info">
+      <p class="contact-title">Email</p>
+      <a href="mailto:anshika.lingua@gmail.com" class="contact-link">anshika.lingua@gmail.com</a>
+    </div>
+  </li>
+</ul>
 
-  </main>
+<!-- About -->
+<article class="about active" data-page="about">
+  <header>
+    <h2 class="h2 article-title">About Me</h2>
+  </header>
+  <section class="about-text">
+    <p>
+      My name is Anshika, and I have been an active linguist for the past six years, where 5 years of teaching encapsulated the essence of my methodologies in teaching. I have made a shift from being an educator to contributing in the field of AI. As a linguistic consultant I have been responsible for transliteration of the text from my mother tongue to English, creating phonological connections through audio or text files. This also involves data annotation and transcription of the text. I believe I bring a perfect blend of EFL and technological skills.
+    </p>
+  </section>
 
+<!-- What I'm doing -->
+<section class="service">
+  <h3 class="h3 service-title">What I'm doing</h3>
+  <ul class="service-list">
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/lang_icon.png" alt="design icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Linguistic Consulting</h4>
+        <p class="service-item-text">
+          I have been working with Productive Playhouse as a linguistic consultant for the past six months.
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
 
+<!-- Resume -->
+<section class="about-text">
+  <object data="./assets/images/Anshika Arora Resume 2025 (Updated) .docx" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" width="100%" height="500px">
+    <p>Unable to display Word file. <a href="./assets/images/Anshika Arora Resume 2025 (Updated) .docx">Download</a></p>
+  </object>
+</section>
 
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
+<!-- Publications replacing hobbies -->
+<article class="hobbies" data-page="hobbies">
+  <header>
+    <h2 class="h2 article-title">Publications</h2>
+  </header>
+  <section class="hobbies-posts">
+    <ul class="hobbies-posts-list">
+      <li class="hobbies-post-item">
+        <div class="hobbies-content">
+          <h3 class="h3 hobbies-item-title">Patent</h3>
+          <p class="hobbies-text">
+            Published a patent on Rapid Reading Enabler 2.0 using AI and Python, approved by Indian government.
+          </p>
+        </div>
+      </li>
+      <li class="hobbies-post-item">
+        <div class="hobbies-content">
+          <h3 class="h3 hobbies-item-title">Research Paper</h3>
+          <p class="hobbies-text">
+            Arora, S. Arora, A. (2018). “Why this Kolaveri about teaching vowel sounds at KG level” <br>
+            The Primary Teacher Journal. ISSN:0970-9282, Vol: XLII, Issue no. 2
+          </p>
+        </div>
+      </li>
+      <li class="hobbies-post-item">
+        <div class="hobbies-content">
+          <h3 class="h3 hobbies-item-title">Oxford Research Archive</h3>
+          <p class="hobbies-text">
+            ORA (Oxford Research Archive): “Qualitative analysis of code-switching with reference to gender and pragmatic functions in Indian students at Oxford”.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>
